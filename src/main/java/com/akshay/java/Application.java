@@ -2,6 +2,11 @@ package com.akshay.java;
 
 public class Application {
     public static void main(String[] args) {
-        System.out.println("hello world");
+        float students = 0.0f;
+        float rooms = 4.0f;
+        if(students>0.0f)
+            System.out.println(students/rooms);
+        else
+            System.out.println("No students");
     }
 }
