@@ -15,7 +15,7 @@ public class ArrayMath {
 
     public static double average(int[] array)
     {
-        double avg = 0d;
+        double avg;
         int sum = sum(array);
         avg = sum/16;
         return avg;
