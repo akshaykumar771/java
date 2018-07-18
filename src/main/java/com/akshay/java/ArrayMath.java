@@ -2,10 +2,7 @@ package com.akshay.java;
 
 public class ArrayMath {
 
-
-
-    public static int sum(int[] array)
-    {
+    public static int sum(int[] array) {
         int sum = 0;
         for (int num : array) {
             sum = sum + num;
@@ -13,17 +10,16 @@ public class ArrayMath {
         return sum;
     }
 
-    public static double average(int[] array)
-    {
+    public static double average(int[] array) {
         double avg;
         int sum = sum(array);
-        avg = sum/16;
+        avg = sum / 16;
         return avg;
     }
 
     public static int findSmall(int[] array) {
         int min = array[0];
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 1; i < array.length-3; i++) {
             if (array[i] < min) {
                 min = array[i];
             }
@@ -33,7 +29,7 @@ public class ArrayMath {
 
     public static void main(String[] args) {
 
-        int array[] = {3,2,4,5,6,4,5,7,3,2,3,4,7,1,2,0,0,0};
+        int array[] = {3, 2, 4, 5, 6, 4, 5, 7, 3, 2, 3, 4, 7, 1, 2, 0, 0, 0};
         int sum = sum(array);
         double avg = average(array);
         int small = findSmall(array);
@@ -47,12 +43,5 @@ public class ArrayMath {
         for (int i : array) {
             System.out.println(i);
         }
-
-
-
     }
-
-
-
-
 }
